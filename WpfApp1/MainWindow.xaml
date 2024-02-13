@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel x:Name="Kapcha" Height="200" Width="400" VerticalAlignment="Top" Visibility="Hidden">
+          <Grid>
+            <Rectangle Height="200" Width="400" Fill="Bisque"/>
+            <TextBox x:Name="TXB2" VerticalAlignment="Top" Margin="20" Height="40" Width="150" HorizontalAlignment="Center"/>
+                <TextBox x:Name="TXB1" Height="40" Width="150"/>
+                <Button Click="Next_Btn" Content="SignIn" Height="40" Width="150" VerticalAlignment="Bottom" Margin="10"/>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Height="200" Width="400" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <TextBlock Text="Логин" Height="20" Width="50"/>
+            <TextBox x:Name="txb_login" Height="20" Width="150"/>
+            
+            <TextBlock Text="Пароль" Height="20" Width="50"/>
+            <PasswordBox x:Name="txb_password" Height="20" Width="150" IsEnabled="False"/>
+
+            <Button Click="Sign" Name="Siiig" Content="войти" Height="20" Width="150" Margin="10"/>
+            <Button Click="Sign2" Name="Siiig2" Content="войти" Height="20" Width="150" Visibility="Hidden"/>
+        </StackPanel>
+    </Grid>
+</Window>
